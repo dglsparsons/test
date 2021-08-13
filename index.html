@@ -14,12 +14,23 @@
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
         }
+        button {
+            padding: 12px 8px; 
+            background: white;
+            border: none; 
+        }
     </style>
+    <script>
+        function click() {
+            document.getElementById('lewis').style.fontSize += 10;
+        }
+    </script>
     <head>
         <title>My Awesome Website</title>
     </head>
     <body class="hero">
-        <p>Lewis Smells</p>
+        <p>Lewis <span id="smells">smells</span></p>
         <p>really badly</p>
+        <button onclick="click">DONT CLICK ME</button>
     </body>
 </html>
